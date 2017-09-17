@@ -3,6 +3,7 @@
 
 typedef struct TREE tree;
 
+// STRUCT da árvore
 
 struct TREE{
 	unsigned char byte;
