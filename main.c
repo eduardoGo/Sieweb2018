@@ -4,17 +4,19 @@
 int main(int argc, char const *argv[])
 {
 	FILE *arq;
+	char a[100];
 	if(argc == 3)
 	{
-		if(argv[1] == 'c')
+		if(argv[1][0] == 'c')
 		{
 			arq = fopen(argv[2],"rb");
-			compress();
+			fgets(a,100,arq);
+			printf("%s\n", a);
 		}
-		else if(argv[1] == 'd')
+		else if(argv[1][0] == 'd')
 		{
 			arq = fopen(argv[2],"rb");
-			descompress();
+			printf("DSucess\n");
 		}
 	}
 	else
